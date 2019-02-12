@@ -8,6 +8,9 @@
 
     public class Subject
     {
+        public Subject()
+        {
 
+        }
     }
 }

@@ -8,6 +8,8 @@
 
     internal class DNA
     {
+        internal Gen[] gens;
+        internal int GensCount { get; } = 100;
 
     }
 }

@@ -8,7 +8,9 @@
 
     public class Subject
     {
-        public Subject()
+        internal Point Point { get; set; }
+
+        internal Subject()
         {
 
         }

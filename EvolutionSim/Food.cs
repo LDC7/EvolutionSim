@@ -1,22 +1,22 @@
 ﻿namespace EvolutionSim
 {
-  internal class Food : IEatable
-  {
-    private readonly int value;
-
-    internal Food(int value)
+    internal class Food : IEatable
     {
-      this.value = value;
-    }
+        private readonly int value;
 
-    public object Clone()
-    {
-      return new Food(this.value);
-    }
+        internal Food(int value)
+        {
+            this.value = value;
+        }
 
-    public int GetValue()
-    {
-      return this.value;
+        public object Clone()
+        {
+            return new Food(this.value);
+        }
+
+        public int GetValue()
+        {
+            return this.value;
+        }
     }
-  }
 }

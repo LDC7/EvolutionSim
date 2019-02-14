@@ -1,22 +1,22 @@
 ﻿namespace EvolutionSim
 {
-  internal class Poison : IEatable
-  {
-    private readonly int value;
-
-    internal Poison(int value)
+    internal class Poison : IEatable
     {
-      this.value = value;
-    }
+        private readonly int value;
 
-    public object Clone()
-    {
-      return new Poison(this.value);
-    }
+        internal Poison(int value)
+        {
+            this.value = value;
+        }
 
-    public int GetValue()
-    {
-      return this.value;
+        public object Clone()
+        {
+            return new Poison(this.value);
+        }
+
+        public int GetValue()
+        {
+            return this.value;
+        }
     }
-  }
 }

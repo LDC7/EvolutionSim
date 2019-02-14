@@ -49,8 +49,10 @@
     <Compile Include="ICell.cs" />
     <Compile Include="IEatable.cs" />
     <Compile Include="Map.cs" />
+    <Compile Include="MapManagment.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Poison.cs" />
+    <Compile Include="Rules.cs" />
     <Compile Include="Subject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Wall.cs" />

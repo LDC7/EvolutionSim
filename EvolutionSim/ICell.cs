@@ -1,4 +1,4 @@
 ﻿namespace EvolutionSim
 {
-  internal interface ICell { }
+    internal interface ICell { }
 }

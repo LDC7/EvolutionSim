@@ -1,9 +1,9 @@
 ﻿namespace EvolutionSim
 {
-  using System;
+    using System;
 
-  internal interface IEatable : ICell, ICloneable
-  {
-    int GetValue();
-  }
+    internal interface IEatable : ICell, ICloneable
+    {
+        int GetValue();
+    }
 }

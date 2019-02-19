@@ -6,6 +6,7 @@
 
     internal class Map
     {
+        private static Random random = new Random();
         internal int SizeX { get; private set; }
         internal int SizeY { get; private set; }
         internal int Size { get { return this.SizeX * this.SizeY; } }
@@ -28,8 +29,6 @@
             this.Cells = new Cell[this.SizeX, this.SizeY];
         }
 
-
-
         internal void CreateFood(int count, Food food)
         {
             int additionalFood = count > this.EmptyCellsCount ? this.EmptyCellsCount : count;
@@ -45,7 +44,7 @@
                 return;
             }
 
-            Random random = new Random();
+            
             List<Cell> emptyCells = this.GetEmptyCells().ToList();
             Cell cell;
             for (int i = 0; i < additionalFood; i++)

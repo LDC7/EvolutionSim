@@ -5,20 +5,21 @@
     internal class Gen
     {
         internal static int MinValue { get; } = 0;
-        internal static int MaxValue { get; } = 17;
-        private GenType value;
+        internal static int MaxActionsValue { get; } = 17;
+        internal static int MaxValue { get; } = 100 + MaxActionsValue - 1;
+        private int value;
 
-        internal GenType Value
+        internal int Value
         {
             get { return this.value; }
             set
             {
-                int tempVar = (int)value < MinValue ? Math.Abs((int)value) : (int)value;
-                this.value = (GenType)(tempVar > MaxValue ? tempVar % MaxValue : tempVar);
+                int tempVar = value < MinValue ? Math.Abs(value) : value;
+                this.value = (tempVar > MaxValue ? tempVar % MaxValue : tempVar);
             }
         }
 
-        internal Gen(GenType gen)
+        internal Gen(int gen)
         {
             Value = gen;
         }

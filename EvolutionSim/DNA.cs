@@ -8,17 +8,11 @@
         internal Gen[] gens;
         internal static int GensCount { get; } = 100;
 
-        internal static DNA CreateRandom()
-        {
-            DNA res = new DNA();
-            Gen[] dnaGens = new Gen[GensCount];
-            for (int i = 0; i < GensCount; i++)
-            {
-                dnaGens[i] = new Gen((Gen.GenType)random.Next(Gen.MinValue, Gen.MaxValue + 1));
-            }
+        internal DNA() { }
 
-            res.gens = dnaGens;
-            return res;
+        internal DNA(Gen[] gens)
+        {
+            this.gens = gens;
         }
 
         internal void Mutate(double chance)
@@ -27,9 +21,22 @@
             {
                 if (random.NextDouble() >= chance)
                 {
-                    gens[i] = new Gen((Gen.GenType)random.Next(Gen.MinValue, Gen.MaxValue + 1));
+                    gens[i] = new Gen(random.Next(Gen.MinValue, Gen.MaxValue + 1));
                 }
             }
+        }
+
+        internal static DNA CreateRandom()
+        {
+            DNA res = new DNA();
+            Gen[] dnaGens = new Gen[GensCount];
+            for (int i = 0; i < GensCount; i++)
+            {
+                dnaGens[i] = new Gen(random.Next(Gen.MinValue, Gen.MaxValue + 1));
+            }
+
+            res.gens = dnaGens;
+            return res;
         }
 
         internal static DNA Mix(DNA dna1, DNA dna2)

@@ -1,0 +1,4 @@
+﻿namespace EvolutionSim
+{
+    interface IEffect { }
+}

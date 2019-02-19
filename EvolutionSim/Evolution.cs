@@ -1,25 +1,35 @@
 ﻿namespace EvolutionSim
 {
+    using System.Collections.Generic;
+
     public class Evolution
     {
-        internal Map map;
         private int maxSubjectsCount;
         private int subjectsMinLimit;
+        private IList<Subject> subjects;
+        private Map map;
 
-        public Evolution()
+        public Evolution(int maxSubCount, int subMinLimit)
         {
-            map = new Map();
+            this.maxSubjectsCount = maxSubCount;
+            this.subjectsMinLimit = subMinLimit;
+            this.subjects = new List<Subject>();
+            this.map = new Map();
         }
 
+        public void Evolve()
+        {
+
+        }
 
         public void SaveMap(string path)
         {
-            MapManagment.SaveMapToTxt(map, path);
+            FileManagment.SaveMapToTxt(map, path);
         }
 
         public void LoadMap(string path)
         {
-            map = MapManagment.LoadMapFromTxt(path);
+            this.map = FileManagment.LoadMapFromTxt(path);
         }
     }
 }

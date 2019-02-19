@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolutionSim", "EvolutionSim\EvolutionSim.csproj", "{6CA222D6-6E8C-432C-BB04-77702B958BB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolutionSimConsole", "EvolutionSimConsole\EvolutionSimConsole.csproj", "{7B6552F3-EE9A-4856-8705-FFC2D3E80E33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolutionSimulator", "EvolutionSimulator\EvolutionSimulator.csproj", "{4D19CC42-168A-44CD-9DBA-7B24BFDAF3CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6CA222D6-6E8C-432C-BB04-77702B958BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CA222D6-6E8C-432C-BB04-77702B958BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CA222D6-6E8C-432C-BB04-77702B958BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B6552F3-EE9A-4856-8705-FFC2D3E80E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6552F3-EE9A-4856-8705-FFC2D3E80E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6552F3-EE9A-4856-8705-FFC2D3E80E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6552F3-EE9A-4856-8705-FFC2D3E80E33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D19CC42-168A-44CD-9DBA-7B24BFDAF3CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D19CC42-168A-44CD-9DBA-7B24BFDAF3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D19CC42-168A-44CD-9DBA-7B24BFDAF3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D19CC42-168A-44CD-9DBA-7B24BFDAF3CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
